@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Reset CSS */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul{
+  list-style: none;
+}
+
+/* General Style */
+
+body{
+  scroll-behavior: smooth;
+
+  background-color: hsl(257, 40%, 49%);
+}
+
+.container{
+  background-image: url("./assets/bg-desktop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Header Style */
+
+header{
+  padding: 50px 0px 50px 50px ;
+}
+
+header a img{
+  width: 200px;
+}
+
+/* Main Style */
+
+main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+main img{
+  width: 50%;
+}
+
+main h1{
+  max-width: 380px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+main p{
+  margin-top: 20px;
+  max-width: 460px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+main button{
+  margin-top: 25px;
+  padding: 15px 80px;
+  border-radius: 2rem;
+  border: none;
+  color: hsl(257, 40%, 49%);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  box-shadow: 0px 2px 0.5em black;
+}
+
+main button:hover{
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+
+/* Footer/Social Media Style */
+
+footer{
+  padding: 15px 80px;
+  margin-left: auto;
+  padding: 40px;
+  text-align: center;
+}
+
+footer img{
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  filter: invert(100%) sepia(1%) saturate(5%) hue-rotate(199deg) brightness(107%) contrast(100%);
+  display: inline-block;
+}
+
+footer img:hover{
+  border-color:hsl(300, 69%, 71%);
+  filter: invert(67%) sepia(63%) saturate(583%) hue-rotate(249deg) brightness(96%) contrast(89%);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1000px){
+  body{
+    background-image: url("./assets/bg-mobile.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  main{
+    text-align: center;
+  }
+
+  main h1{
+    max-width: 400px;
+    margin: auto;
+  }
+
+  main p{
+    max-width: 300px;
+    margin:20px auto;
+  }
+
+  main button{
+    margin: auto;
+  }
+
+  .maintext{
+    margin-top: 100px;
+  }
+
+  footer{
+    margin: auto;
+  }
+
+  footer img:first-child{
+    margin-left: 0;
+  }
+}
